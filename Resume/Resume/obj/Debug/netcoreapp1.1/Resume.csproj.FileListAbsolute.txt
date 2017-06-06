@@ -1,0 +1,9 @@
+C:\DotNetClass\Projects\Resume\Resume\bin\Debug\netcoreapp1.1\Resume.deps.json
+C:\DotNetClass\Projects\Resume\Resume\bin\Debug\netcoreapp1.1\Resume.runtimeconfig.json
+C:\DotNetClass\Projects\Resume\Resume\bin\Debug\netcoreapp1.1\Resume.runtimeconfig.dev.json
+C:\DotNetClass\Projects\Resume\Resume\bin\Debug\netcoreapp1.1\Resume.dll
+C:\DotNetClass\Projects\Resume\Resume\bin\Debug\netcoreapp1.1\Resume.pdb
+C:\DotNetClass\Projects\Resume\Resume\obj\Debug\netcoreapp1.1\Resume.csprojResolveAssemblyReference.cache
+C:\DotNetClass\Projects\Resume\Resume\obj\Debug\netcoreapp1.1\Resume.AssemblyInfo.cs
+C:\DotNetClass\Projects\Resume\Resume\obj\Debug\netcoreapp1.1\Resume.dll
+C:\DotNetClass\Projects\Resume\Resume\obj\Debug\netcoreapp1.1\Resume.pdb
