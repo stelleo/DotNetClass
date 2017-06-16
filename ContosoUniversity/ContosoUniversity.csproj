@@ -11,6 +11,13 @@
   <PropertyGroup>
     <UserSecretsId>aspnet-ContosoUniversity-5a14b9f6-3f4c-471b-b33c-1ba8aaab8ed4</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.cs" />
+    <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20170616012944_InitialMigration.cs" />
+    <Compile Remove="Data\Migrations\20170616012944_InitialMigration.Designer.cs" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />

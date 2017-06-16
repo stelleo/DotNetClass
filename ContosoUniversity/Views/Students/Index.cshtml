@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Students</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -14,7 +14,7 @@
         <p>
             Find by name: <input type="text" name="searchString" value="@ViewData["searchString"]"/>
             <input type="submit" value="Search" class="btn btn-default"/>
-            <a asp-action="Index">&nbsp;&nbsp;Back to Full List</a>
+            &nbsp;&nbsp;<a asp-action="Index">Reset (show all)</a>
         </p>
     </div>
 </form>
@@ -22,15 +22,20 @@
     <thead>
         <tr>
                 <th>
-                       <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParam"]"
-                           asp-route-currentFilter="@ViewData["CurrentFilter"]">
-                           @Html.DisplayNameFor(model => model[0].LastName)
-                       </a>
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParam"]"
+                        asp-route-currentFilter="@ViewData["CurrentFilter"]">
+                        @Html.DisplayNameFor(model => model[0].LastName)
+                    </a>
+                </th>
 
-                </th>
                 <th>
-                    @Html.DisplayNameFor(model => model[0].FirstMidName)
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParam"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]">
+                        @Html.DisplayName("First Name")
+                    </a>
+@*                    @Html.DisplayNameFor(model => model[0].FirstMidName)*@
                 </th>
+
                 <th>
                     <a asp-action="Index" asp-route-sortOrder="@ViewBag.DateSortParam"
                         asp-route-currentFilter="@ViewData["CurrentFilter"]">
@@ -53,9 +58,9 @@
                 @Html.DisplayFor(modelItem => item.EnrollmentDate)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ID">&nbsp;Edit </a> |
+                <a asp-action="Details" asp-route-id="@item.ID">&nbsp;Details </a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">&nbsp;Delete </a>
             </td>
         </tr>
 

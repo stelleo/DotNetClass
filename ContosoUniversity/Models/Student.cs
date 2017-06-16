@@ -12,16 +12,16 @@ namespace ContosoUniversity.Models
         public int ID { get; set; }
 
         [Required]
-        [StringLength(50, ErrorMessage ="Get a shorter last name please. Maximum 50 characters.")]
-        [RegularExpression(@"^[A-Z].*$", ErrorMessage ="Last name must with a capital letter.")]
-        [Display(Name = "Last Name")]
-        public string LastName { get; set; }
-
-        [Required]
         [StringLength(50, ErrorMessage = "Get a shorter first name please. Maximum 50 characters.")]
         [RegularExpression(@"^[A-Z].*$", ErrorMessage = "First name must with a capital letter.")]
         [Display(Name = "First Mid Name")]
         public string FirstMidName { get; set; }
+
+        [Required]
+        [StringLength(50, ErrorMessage ="Get a shorter last name please. Maximum 50 characters.")]
+        [RegularExpression(@"^[A-Z].*$", ErrorMessage ="Last name must with a capital letter.")]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
 
         [Required]
         [DisplayFormat(ApplyFormatInEditMode =true, DataFormatString ="{0:d}")]
